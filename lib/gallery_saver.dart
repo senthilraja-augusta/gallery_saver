@@ -23,9 +23,9 @@ class GallerySaver {
     if (path == null || path.isEmpty) {
       throw ArgumentError(pleaseProvidePath);
     }
-    if (!isVideo(path)) {
-      throw ArgumentError(fileIsNotVideo);
-    }
+    //if (!isVideo(path)) {
+    //  throw ArgumentError(fileIsNotVideo);
+    //}
     if (!isLocalFilePath(path)) {
       tempFile = await _downloadFile(path);
       path = tempFile.path;
@@ -46,9 +46,9 @@ class GallerySaver {
     if (path == null || path.isEmpty) {
       throw ArgumentError(pleaseProvidePath);
     }
-    if (!isImage(path)) {
-      throw ArgumentError(fileIsNotImage);
-    }
+    //if (!isImage(path)) {
+    //  throw ArgumentError(fileIsNotImage);
+    //}
     if (!isLocalFilePath(path)) {
       tempFile = await _downloadFile(path);
       path = tempFile.path;
